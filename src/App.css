@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #3498db;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.user-details {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+}
+
+.user-details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-details h2 {
+  margin: 5px 0;
+}
+
+.user-details p {
+  margin: 5px 0;
+}
+
+.user-details ul {
+  margin: 10px 0;
+  padding-left: 0;
+}
+
+.user-details li {
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+.reset-button {
+  padding: 8px 16px;
+  background-color: white;
+  color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #3498db;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
   }
 }
